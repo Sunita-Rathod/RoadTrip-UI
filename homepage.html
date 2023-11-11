@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body{
+            background-image:url('/rout3.webp') ;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            top: 6px;
+            left: -5px;
+            padding-left: 10px;
+
+        }
+        .mid{
+            display: block;
+            width:836px;
+            margin: 20px 432px;
+        }
+
+        .btn{
+            display: inline-block;
+            position: absolute;
+            top: 40px;
+            right: 94px;
+        }
+        .mid img{
+            border: 2px solid gray;
+            width: 40px;
+            display: inline-block;
+        }
+        
+        .left div{
+            color: blue;
+            margin: 10px 106px;
+            text-align: right;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .navbar{
+            display:inline-block;
+            font-family: Tahoma,Verdana,Segoe,sans-serif; ;
+        }
+        .navbar li{
+           display: inline-block;
+        }
+        .navbar li a{
+            color: black;
+            font-size: 20px;
+            display: inline-block;
+            text-decoration: none;
+            padding: 5px 29px;
+        }
+        .navbar li a.EN1{
+                font-size: 14px; 
+                color: blue; 
+                padding-left:31px;
+        }
+        .user{
+            border-radius: 30px;
+        }
+        .btn{
+            padding:2px 20px;
+            padding-bottom: 9px;
+            border-radius: 25px; 
+            color:black;
+            border-color:black;
+            background-color:white;
+            text-align: start;
+            font-family: Tahoma,Verdana,Segoe,sans-serif;
+            cursor: pointer; 
+        }
+        
+        .btn:hover{
+            color:black;
+            background-color: rgb(231, 225, 217);
+            transform:scale(1.1);
+        }
+      
+       .middle{
+            width: 990px;
+            padding: 10px 10px;
+            margin: 127px auto;
+            color: #ffc4fb;
+        }
+        .middle h2{
+            color: black;
+            text-align: center;
+            font-size: 30px;
+        }
+        .container{
+            border: 2px solid red;
+            margin: 10px 10px;
+        }
+       .search1{
+        padding: 8px 10px;
+        border-radius: 23px;
+        text-align: center;
+        margin-left: 20px;
+       }
+       .search2{
+        padding: 8px 10px;
+        border-radius: 23px;
+        text-align: center;
+        margin-left: 20px;
+       }
+       .search3{
+        padding: 8px 10px;
+        border-radius: 23px;
+        text-align: center;
+        margin-left: 20px;
+       }
+      
+       .searchbtn{
+        padding: 8px 35px;
+        border-radius: 23px;
+        margin-left: 180px;
+        background-color:darkblue;
+        border-color: 2px solid black;
+        color: white;
+       }
+       .searchbtn:hover{
+        background-color: rgb(43, 43, 184);
+        cursor: pointer;
+        transform: scale(1.1);
+       }
+       .search{
+        background: rgba(0,0,0,0.5);
+        padding: 15px 30px;
+        border-radius: 40px;
+       }
+       .middle h3{
+        color: black;
+        font-size: 20;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <!-- to add mutiple color to single text we have to use span tag -->
+            <div>
+                <h3><span style="color:blue;">Rout</span><span style="color: black;">Book</span></h3>
+          </div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Search on map</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" class="EN1">EN</a></li>
+                    <i class="fa fa-solid fa-user"></i>
+                   
+                </ul>  
+                <button type="button" class="btn">Add route <i class="fa fa-duotone fa-circle-plus"></i></button>   
+            </nav>
+        </div>
+           
+    </header>
+    <div class="middle">
+        <h2>Discover intresting route around the world</h2>
+        <form action="">
+            <div class="search">
+                <input type="text" placeholder="From Where" class="search1" required>
+                <input type="text" placeholder="Where" class="search2" required>
+                <input type="text" placeholder="Way to travel" class="search3" required>
+                <button type="button" class="searchbtn">Search</button>
+            </div>   
+        </form>
+        <h3>A single platform for exchanging routes-use and publish the best routes <br>around the world with many intresting places, 
+            photos, ratings and <br>reviews.
+        </h3>           
+    </div>         
+</body>
+</html>

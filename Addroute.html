@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add route page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        body{
+            background-color: #f6ecf7;
+        }
+        .mid{
+         margin: auto;
+         margin-left: 202px;
+         border-top: 1px solid rgba(255,255,255,.1);
+         border-bottom: 1px solid black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        .sidebar{
+            width: 260px;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            background-color:#042331;
+        }
+        .sidebar header{
+            color: aliceblue;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            background-color: #063146;
+        }
+        .sidebar h3{
+            font-size: 15px;
+            color: #3e7d9c;
+            line-height: 60px;
+            display: block;
+            border: black;
+            padding-left: 30px;
+        }
+        .sidebar ul a{
+            font-size: 17px;
+            display: block;
+            line-height: 35px;
+            color: white;
+            border-top: 1px solid rgba(255,255,255,.1);
+            border-bottom: 1px solid black;
+            width: 100%;
+            height: 100%;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar a:hover{
+            color: lightblue;
+           padding-left: 18px;
+        }
+        .sidebar li i{
+            margin-right: 10px;
+        }
+        .navbar{
+            display: inline-block;
+            background-color: white;
+            width: 100%;
+            height:51px;
+        }
+        .navbar ul{
+            padding-left: 106px;
+        }
+        .navbar li{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .navbar ul a{
+            text-align: center;
+            color: black;
+            font-size: 20px; 
+            padding-left: 70px;
+        }
+        .navbar ul a:hover{
+            color: red;
+            padding-right: 10px;
+        }
+        .btn{
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            top: 4px;
+            background-color: white;
+            margin-right: 70px;
+            margin-top: 6px;
+            padding: 6px 10px;
+            border-radius: 19px;
+            border:2px solid black;
+        }
+        .btn:hover{
+            color:black;
+            background-color: rgb(231, 225, 217);
+            transform:scale(1.1);
+        }
+        .Addroute{
+            width: 258px;
+            height: 57px;
+            margin-left:364px;
+            margin-top: 15px;
+            
+        }
+        .Addroute header{
+            font-size: 20px;
+      
+        }
+        span{
+            text-align: center;
+        }
+        .Addroute header,span{
+            margin: 6px;
+        }
+        .middle{
+            
+            width: 619px;
+            height: 261px;
+            margin-left: 372px;
+            margin-top: 15px;
+            padding-left: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(27, 18, 18, 0.1);
+            border-bottom: 1px solid black;
+            background-color: white;
+            
+        }
+        .middle header{
+            font-size: 19px;
+        }
+        .input1{
+            padding: 6px;
+            width: 500px;
+        }
+        .input2{
+            padding: 6px;
+            width: 500px;
+        }
+        .last{
+            width: 619px;
+            height: 210px;
+            margin-top: 35px;
+            margin-left:824px; 
+            padding-left: 25px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(27, 18, 18, 0.1);
+            border-bottom: 1px solid black;
+            background-color: white;
+
+        }
+        .last header{
+            font-size: 25px;
+        }
+        .last b{
+            font-size: 15px;
+        }
+        #textarea{
+            text-align: center;
+        }
+           
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+       <header>RoutBook</header>
+       <h3>ROUTES</h3>
+       <ul type="none">
+        <li><a href="#"class="name1"><i class="fa fa-sharp fa-light fa-route"></i> My routes</a></li><br>
+        <li><a href="#"class="name2"><i class="fa fa-thin fa-heart"></i> Favorite routes</a></li><br>
+        <li><a href="#"class="name3"><i class="fa fa-duotone fa-circle-plus"></i> Add routes</a></li>
+    </ul>
+    <h3>PEOPLE</h3>
+        <ul type="none">
+            <li><a href="#"class="name4"><i class="fa fa-regular fa-user"></i> My profile</a></li><br>
+            <li><a href="#"class="name5"><i class="fa fa-thin fa-power-off"></i> Logout</a></li>
+        </ul>
+    </div>
+        <header>
+            <div class="mid">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Search on map</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <button type="button" class="btn">Add route <i class="fa fa-duotone fa-circle-plus"></i></buttton>
+                </nav>
+        </header>
+        <div class="Addroute">
+            <header><b>Add route</b></header>
+            <span><b>Main &gt; Personal area &gt; My profile</b></span>
+        </div>
+        <div class="middle">
+            <header><b>Basic information</b></header>
+            <br>
+            <label for="Route">Route name <i class="fa fa-duotone fa-circle-plus"></i></label>
+           <div>
+            <input type="text" name="route" id="Route" class="input1"required>
+           </div>
+           <br>
+           <label for="Cname">Category  <i class="fa fa-duotone fa-circle-plus"></i></label>
+           <div>
+            <select name="Category"id="Cname" class="input1">
+                <option value="option1">option1</option>
+                <option value="option2">option2</option>
+                <option value="option3" selected>option3</option>
+            </select>
+           </div>
+           <br>
+           <label for="Keywords">Keywords <i class="fa fa-duotone fa-circle-plus"></i></label>
+           <div>
+            <input type="text" name="keywords" id="Keywords" class="input2" required>
+           </div>
+        </div>
+        <div class="last">
+            <header><b>Genral description of the route</b></header>
+            <br>
+         <b>Tell us about this route</b>
+         <textarea name="Tell us about this route" id="textarea" cols="75" rows="9"></textarea>
+        </div>
+    
+</body>
+</html>
